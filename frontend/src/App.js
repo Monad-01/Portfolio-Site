@@ -5,7 +5,14 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <header class="header">Bottom Texter</header>
+      <header class="header">
+        <div class="header-text-box">
+          <div class="header-primary-box">
+            <span class="header-primary-text">Johnathan Pruitt</span>
+            <span class="header-bottom-text">•Software Developer•</span>
+          </div>
+        </div>
+      </header>
     </div>
   );
 }

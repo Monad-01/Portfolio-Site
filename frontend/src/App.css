@@ -51,5 +51,32 @@ body {
   background-position: top;
   /* No matter where the viewport size is, the image will always show the "top" of itself */
 
-  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.header-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-primary-box {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-primary-text {
+  display: block;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 30px;
+}
+
+.header-bottom-text {
+  display: block;
+  letter-spacing: 10px;
+  font-weight: 400;
+  font-size: 30px;
+  padding-top: 10px;
 }
