@@ -71,6 +71,9 @@ body {
   font-weight: 400;
   font-size: 60px;
   letter-spacing: 30px;
+
+  animation-name: bouncingIn;
+  animation-duration: 2s;
 }
 
 .header-bottom-text {
@@ -79,4 +82,44 @@ body {
   font-weight: 400;
   font-size: 30px;
   padding-top: 10px;
+
+  animation-name: showedUp;
+  animation-duration: 1.5s;
+}
+
+@keyframes bouncingIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  60% {
+    transform: translateY(-75px);
+  }
+
+  80% {
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transorm: translateY(0);
+  }
+}
+
+@keyframes showedUp {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  95% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
