@@ -16,6 +16,25 @@ function App() {
           </a>
         </div>
       </header>
+      <div class="blank"></div>
+      <div class="about">
+        <div class="about-left-column">
+          <div class="about-img"></div>
+          <div class="about-left-column-textbox">
+            <div class="about-left-column-textbox-subtext">
+              "I will not die until I achieve something.
+            </div>
+            <div class="about-left-column-textbox-subtext">
+              Even though the ideal is high, <br />I never give in.
+            </div>
+            <div class="about-left-column-textbox-subtext">
+              Therefore, I never die with regrets."
+            </div>
+            <div class="about-left-column-textbox-subtext">-Ikaruga</div>
+          </div>
+        </div>
+        <div class="about-right-column">Yes yes yes yes yes</div>
+      </div>
     </div>
   );
 }

@@ -58,6 +58,8 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
 }
 
+/* Maybe add a space of 5vh for just consistency */
+
 .header-text-box {
   position: absolute;
   top: 50%;
@@ -73,7 +75,7 @@ body {
 .header-primary-text {
   display: block;
   font-weight: 400;
-  font-size: 6rem;
+  font-size: 5rem;
   letter-spacing: 3rem;
 
   animation-name: bouncingIn;
@@ -154,4 +156,67 @@ body {
   background-color: #f0d200;
   animation-name: showedUp;
   animation-duration: 1.5s;
+}
+
+.blank {
+  height: 5vh;
+}
+
+.about {
+  height: 95vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Splits the grid into 2 equal fractions */
+
+  grid-template-areas: "about-left-column about-right-column";
+  /* Just literally specify which grid-areas you want to display and how you want to display it */
+}
+
+.about-left-column {
+  grid-area: about-left-column;
+}
+
+.about-right-column {
+  grid-area: about-right-column;
+  background-color: lightgrey;
+}
+
+.about-img {
+  margin: 0 auto;
+  margin-top: 4rem;
+  background-image: url(images/Yes.png);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  width: 30rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.about-left-column-textbox {
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+  width: 50rem;
+  font-style: italic;
+  display: block;
+  text-align: center;
+  background-color: #f0d200;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Splits the grid into 2 equal fractions */
+
+    grid-template-areas:
+      "about-left-column"
+      "about-right-column";
+    /* Just literally specify which grid-areas you want to display and how you want to display it */
+  }
 }
