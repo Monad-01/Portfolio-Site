@@ -25,17 +25,21 @@ every element, and we will be able to set it to default values of 0
   */
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: Roboto Slab;
   font-weight: 400;
   /* Fun fact, font-weight doesn't change h1 tags */
 
-  font-size: 31px;
+  font-size: 3rem;
   line-height: 1.7;
   /* Determines the space between the lines of text */
 
   color: black;
-  padding: 30px;
+  padding: 3rem;
 }
 
 .header {
@@ -59,18 +63,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .header-primary-box {
   color: white;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .header-primary-text {
   display: block;
   font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 30px;
+  font-size: 6rem;
+  letter-spacing: 3rem;
 
   animation-name: bouncingIn;
   animation-duration: 2s;
@@ -78,10 +82,10 @@ body {
 
 .header-bottom-text {
   display: block;
-  letter-spacing: 10px;
+  letter-spacing: 1rem;
   font-weight: 400;
-  font-size: 30px;
-  padding-top: 10px;
+  font-size: 3rem;
+  padding-top: 1rem;
 
   animation-name: showedUp;
   animation-duration: 1.5s;
@@ -90,15 +94,15 @@ body {
 @keyframes bouncingIn {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(5rem);
   }
 
   60% {
-    transform: translateY(-75px);
+    transform: translateY(-7.5rem);
   }
 
   80% {
-    transform: translateY(20px);
+    transform: translateY(2rem);
   }
   100% {
     opacity: 1;
@@ -112,11 +116,11 @@ body {
   }
   90% {
     opacity: 0;
-    transform: translateY(-60px);
+    transform: translateY(-6rem);
   }
   95% {
     opacity: 0.5;
-    transform: translateY(10px);
+    transform: translateY(1rem);
   }
   100% {
     opacity: 1;
