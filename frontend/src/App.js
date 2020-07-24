@@ -11,6 +11,9 @@ function App() {
             <span class="header-primary-text">Johnathan Pruitt</span>
             <span class="header-bottom-text">•Software Developer•</span>
           </div>
+          <a href="#" class="btn header-btn">
+            Connect
+          </a>
         </div>
       </header>
     </div>
