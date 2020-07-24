@@ -25,17 +25,21 @@ every element, and we will be able to set it to default values of 0
   */
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: Roboto Slab;
   font-weight: 400;
   /* Fun fact, font-weight doesn't change h1 tags */
 
-  font-size: 31px;
+  font-size: 3rem;
   line-height: 1.7;
   /* Determines the space between the lines of text */
 
   color: black;
-  padding: 30px;
+  padding: 3rem;
 }
 
 .header {
@@ -51,5 +55,103 @@ body {
   background-position: top;
   /* No matter where the viewport size is, the image will always show the "top" of itself */
 
-  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.header-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-primary-box {
+  color: white;
+  text-transform: uppercase;
+}
+
+.header-primary-text {
+  display: block;
+  font-weight: 400;
+  font-size: 6rem;
+  letter-spacing: 3rem;
+
+  animation-name: bouncingIn;
+  animation-duration: 2s;
+}
+
+.header-bottom-text {
+  display: block;
+  letter-spacing: 1rem;
+  font-weight: 400;
+  font-size: 3rem;
+  padding-top: 1rem;
+
+  animation-name: showedUp;
+  animation-duration: 1.5s;
+}
+
+@keyframes bouncingIn {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  60% {
+    transform: translateY(-7.5rem);
+  }
+
+  80% {
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transorm: translateY(0);
+  }
+}
+
+@keyframes showedUp {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(-6rem);
+  }
+  95% {
+    opacity: 0.5;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 1rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.header-btn {
+  color: #fff;
+  background-color: #f0d200;
+  animation-name: showedUp;
+  animation-duration: 1.5s;
 }
