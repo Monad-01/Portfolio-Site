@@ -178,7 +178,6 @@ body {
 
 .about-right-column {
   grid-area: about-right-column;
-  background-color: lightgrey;
 }
 
 .about-img {
@@ -207,6 +206,31 @@ body {
   box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
 }
 
+.about-right-column text {
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: 300;
+  background-color: #f0d200;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+}
+
+.about-right-column-subtext {
+  font-size: 2.5rem;
+  text-align: start;
+  font-weight: 300;
+  background-color: #f0d200;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+}
+
+.about-right-column h1 {
+  text-align: left;
+}
+/* AHAHAHHAHAAAAAAA THIS LITERALLY SAVES ME SO MUCH HEADACHE FOR
+"responsive design" JUST REFORMAT IDIOT AND MAKE IT LOOK GOOD */
 @media screen and (max-width: 800px) {
   .about {
     height: 95vh;

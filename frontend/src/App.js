@@ -33,7 +33,23 @@ function App() {
             <div class="about-left-column-textbox-subtext">-Ikaruga</div>
           </div>
         </div>
-        <div class="about-right-column">Yes yes yes yes yes</div>
+        <div class="about-right-column">
+          <div class="about-right-column-textbox">
+            <h1>"Hello, World!"</h1>
+            <text>My name is Johnathan Pruitt.</text>
+            <br />
+            <br />
+            <div class="about-right-column-subtext">
+              I am a passionate software developer that is always striving to
+              push their own boundaries of programming and is currently trying
+              to find their next adventure.
+            </div>
+            <br />
+            <div class="about-right-column-subtext">
+              Insert something about langauges here
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
