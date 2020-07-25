@@ -65,7 +65,7 @@ function App() {
                 able to answer their question
               </p>
               <h5>
-                Demo <img /> Github
+                Demo <img /> Githubbbb
               </h5>
             </div>
           </div>
