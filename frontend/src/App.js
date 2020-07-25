@@ -33,7 +33,59 @@ function App() {
             <div class="about-left-column-textbox-subtext">-Ikaruga</div>
           </div>
         </div>
-        <div class="about-right-column">Yes yes yes yes yes</div>
+        <div class="about-right-column">
+          <div class="about-right-column-textbox">
+            <h1>"Hello, World!"</h1>
+            <text>My name is Johnathan Pruitt.</text>
+            <br />
+            <br />
+            <div class="about-right-column-subtext">
+              I am a passionate software developer that is always striving to
+              push their own boundaries of programming and is currently trying
+              to find their next adventure.
+            </div>
+            <br />
+            <div class="about-right-column-subtext">
+              Insert something about langauges here
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blank"></div>
+      <div class="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+          <div class="project project1">
+            <img class="thumbnail1" />
+            <div class="project-text">
+              <h6>Good Samaritan</h6>
+              <p>
+                Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+                Ipsum
+              </p>
+            </div>
+          </div>
+          <div class="project project2">
+            <img class="thumbnail1" />
+            <div class="project-text">
+              <h6>Mars Weather App</h6>
+              <p>
+                Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+                Ipsum
+              </p>
+            </div>
+          </div>
+          <div class="project project3">
+            <img class="thumbnail1" />
+            <div class="project-text">
+              <h6>Curated</h6>
+              <p>
+                Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+                Ipsum
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
