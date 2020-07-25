@@ -232,11 +232,11 @@ body {
 
 .projects {
   height: 95vh;
-  background-image: linear-gradient(to right, #f0d400b7, #faf2b5b7);
+  /* background-image: linear-gradient(to right, #f0d400b7, #faf2b5b7);
 
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%); */
 }
 
 .projects-container {
@@ -264,20 +264,26 @@ body {
   box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
 }
 
+.projects h1 {
+  background-color: #f0d200;
+  text-align: center;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+}
 .project h6 {
-  background-color: #faf2b5;
+  background-color: #f0d200;
 }
 .project p {
   font-weight: 200;
   font-size: 2rem;
+  background-color: #fefced;
+}
+
+.project h5 {
+  background-color: #faf2b5;
 }
 
 .project1 {
   grid-area: project1;
-}
-
-.project-text {
-  background-color: #fff;
 }
 
 .thumbnail1 {

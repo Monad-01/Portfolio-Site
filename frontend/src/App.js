@@ -53,16 +53,20 @@ function App() {
       </div>
       <div class="blank"></div>
       <div class="projects">
-        <h1>Projects</h1>
+        <h1>Project Showcase</h1>
         <div class="projects-container">
           <div class="project project1">
             <img class="thumbnail1" />
             <div class="project-text">
               <h6>Good Samaritan</h6>
               <p>
-                Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
-                Ipsum
+                A real-time Q/A application where travelers are able to ask any
+                question around the world, and only nearby local users are only
+                able to answer their question
               </p>
+              <h5>
+                Demo <img /> Github
+              </h5>
             </div>
           </div>
           <div class="project project2">
@@ -70,9 +74,13 @@ function App() {
             <div class="project-text">
               <h6>Mars Weather App</h6>
               <p>
-                Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
-                Ipsum
+                A weather app where users are able to view the weather on Mars
+                and Earth and see a comparison side-by-side.
+                <br />
+                <br />
+                <br />
               </p>
+              <h5>Demo Github</h5>
             </div>
           </div>
           <div class="project project3">
@@ -80,9 +88,12 @@ function App() {
             <div class="project-text">
               <h6>Curated</h6>
               <p>
-                Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
-                Ipsum
+                A social media website inspired from Dribbble, where users are
+                able to showcase their creative works and interact with others.
+                <br />
+                <br />
               </p>
+              <h5>Demo Github</h5>
             </div>
           </div>
         </div>
