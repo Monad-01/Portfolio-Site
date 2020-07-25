@@ -218,7 +218,7 @@ body {
 
 .about-right-column-subtext {
   font-size: 2.5rem;
-  text-align: start;
+  text-align: center;
   font-weight: 300;
   background-color: #f0d200;
   -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
@@ -229,6 +229,74 @@ body {
 .about-right-column h1 {
   text-align: left;
 }
+
+.projects {
+  height: 95vh;
+  background-image: linear-gradient(to right, #f0d400b7, #faf2b5b7);
+
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Splits the grid into 2 equal fractions */
+
+  grid-template-areas: "project1 project2 project3";
+  /* Just literally specify which grid-areas you want to display and how you want to display it */
+}
+
+.project {
+  margin: 4rem 2rem;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+
+  transition: all 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-0.5rem);
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+}
+
+.project h6 {
+  background-color: #faf2b5;
+}
+.project p {
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.project1 {
+  grid-area: project1;
+}
+
+.project-text {
+  background-color: #fff;
+}
+
+.thumbnail1 {
+  display: block;
+  background-image: url(images/Yes.png);
+  background-size: cover;
+  background-position: center;
+  height: 13rem;
+  width: 100%;
+}
+
+.project2 {
+  grid-area: project2;
+}
+
+.project3 {
+  grid-area: project3;
+}
+
 /* AHAHAHHAHAAAAAAA THIS LITERALLY SAVES ME SO MUCH HEADACHE FOR
 "responsive design" JUST REFORMAT IDIOT AND MAKE IT LOOK GOOD */
 @media screen and (max-width: 800px) {
