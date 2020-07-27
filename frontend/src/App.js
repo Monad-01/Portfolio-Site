@@ -98,6 +98,15 @@ function App() {
           </div>
         </div>
       </div>
+      <div class="blank"></div>
+      <div class="contact-page">
+        <div class="contact-page-textbox">
+          <div class="contact-page-textbox-main">
+            <h1>Contact Me @:</h1>
+            <div></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
