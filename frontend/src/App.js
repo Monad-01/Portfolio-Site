@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import githubImg from "./images/GitHub-Mark-64px.png";
+import youtubeImg from "./images/icons8-play-button-50.png";
 
 function App() {
   return (
@@ -8,8 +10,12 @@ function App() {
       <header class="header">
         <div class="header-text-box">
           <div class="header-primary-box">
-            <span class="header-primary-text">Johnathan Pruitt</span>
+            <span class="header-primary-text">Johnathan</span>
+            <br />
+            <span class="header-middle-text">Pruitt</span>
+            <br />
             <span class="header-bottom-text">•Software Developer•</span>
+            <br />
           </div>
           <a href="#" class="btn header-btn">
             Connect
@@ -64,9 +70,12 @@ function App() {
                 question around the world, and only nearby local users are only
                 able to answer their question
               </p>
-              <h5>
-                Demo <img /> Githubbbb
-              </h5>
+              <div class="sources-block">
+                <img class="youtube-icon" src={youtubeImg} />
+                <h5>Youtube Demo</h5>{" "}
+                <img class="github-icon-small" src={githubImg} />{" "}
+                <h5>Github</h5>
+              </div>
             </div>
           </div>
           <div class="project project2">
@@ -80,7 +89,12 @@ function App() {
                 <br />
                 <br />
               </p>
-              <h5>Demo Github</h5>
+              <div class="sources-block">
+                <img class="youtube-icon" src={youtubeImg} />
+                <h5>Youtube Demo</h5>{" "}
+                <img class="github-icon-small" src={githubImg} />{" "}
+                <h5>Github</h5>
+              </div>
             </div>
           </div>
           <div class="project project3">
@@ -93,7 +107,12 @@ function App() {
                 <br />
                 <br />
               </p>
-              <h5>Demo Github</h5>
+              <div class="sources-block">
+                <img class="youtube-icon" src={youtubeImg} />
+                <h5>Youtube Demo</h5>{" "}
+                <img class="github-icon-small" src={githubImg} />{" "}
+                <h5>Github</h5>
+              </div>
             </div>
           </div>
         </div>
@@ -103,7 +122,17 @@ function App() {
         <div class="contact-page-textbox">
           <div class="contact-page-textbox-main">
             <h1>Contact Me @:</h1>
-            <div></div>
+            <div class="contact-info">
+              <img class="github-icon" src={githubImg} />
+              Github
+            </div>
+            <div class="contact-info">
+              <img class="email-icon" />
+              Github
+            </div>
+            <div class="contact-info">
+              <img class="linkedin-icon" />
+            </div>
           </div>
         </div>
       </div>
