@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import githubImg from "./images/GitHub-Mark-64px.png";
 import youtubeImg from "./images/icons8-play-button-50.png";
+import emailImg from "./images/icons8-new-post-100.png";
+import linkedInImg from "./images/icons8-linkedin-96.png";
 
 function App() {
   return (
@@ -122,16 +124,24 @@ function App() {
         <div class="contact-page-textbox">
           <div class="contact-page-textbox-main">
             <h1>Contact Me @:</h1>
+            <br />
             <div class="contact-info">
-              <img class="github-icon" src={githubImg} />
-              Github
+              <p>
+                <img class="github-icon" src={githubImg} /> Github
+              </p>
             </div>
+            <br />
             <div class="contact-info">
-              <img class="email-icon" />
-              Github
+              <p>
+                <img class="linkedin-icon" src={linkedInImg} /> LinkedIn
+              </p>
             </div>
+            <br />
             <div class="contact-info">
-              <img class="linkedin-icon" />
+              <p>
+                <img class="email-icon" src={emailImg} /> :
+                pruittj1998@gmail.com
+              </p>
             </div>
           </div>
         </div>

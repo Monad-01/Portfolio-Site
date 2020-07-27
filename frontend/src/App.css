@@ -328,32 +328,60 @@ body {
 .contact-page {
   height: 95vh;
   display: block;
-  background-image: linear-gradient(to right, #f0d400, #faf2b5);
-
-  background-size: cover;
-  /* No matter what the width of the viewport is, we are trying to set the image within the width of the box */
-
-  background-position: top;
-  /* No matter where the viewport size is, the image will always show the "top" of itself */
 }
 
 .contact-page-textbox {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 70%);
+  transform: translate(-50%, 20%);
+}
+
+.contact-info {
+  background-color: #f0d200;
+  text-align: center;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
 }
 
 .contact-page-textbox h1 {
-  color: white;
+  color: black;
   font-weight: 400;
   font-size: 5rem;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
+  background-color: #f0d200;
+  text-align: center;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+}
+
+.contact-info p {
+  font-weight: 500;
+  font-size: 4rem;
 }
 
 .github-icon-small {
   display: inline-block;
   height: 3rem;
   width: 3rem;
+  transform: translateY(20%);
+}
+
+.email-icon {
+  height: 5rem;
+  transform: translate(10%, 25%);
+}
+
+.github-icon {
+  display: inline-block;
+  height: 5rem;
+  transform: translateY(20%);
+}
+
+.linkedin-icon {
+  display: inline-block;
+  height: 5rem;
   transform: translateY(20%);
 }
 
