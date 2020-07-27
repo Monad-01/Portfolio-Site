@@ -40,22 +40,19 @@ body {
 
   color: black;
   padding: 3rem;
+  background-image: url("images/T36NKK.jpg");
+  background-size: contain;
 }
 
 .header {
   height: 95vh;
   /* We are saying that the webpage should always take 95% of the viewport height at all times */
 
-  background-image: linear-gradient(to right, #f0d400b7, #faf2b5b7),
-    url("images/Houston Skyline Image.jpg");
-
   background-size: cover;
   /* No matter what the width of the viewport is, we are trying to set the image within the width of the box */
 
   background-position: top;
   /* No matter where the viewport size is, the image will always show the "top" of itself */
-
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
 }
 
 /* Maybe add a space of 5vh for just consistency */
@@ -68,29 +65,50 @@ body {
   text-align: center;
 }
 .header-primary-box {
-  color: white;
+  color: black;
   text-transform: uppercase;
 }
 
 .header-primary-text {
+  background-color: #f0d200;
+  text-align: center;
   display: block;
   font-weight: 400;
   font-size: 5rem;
   letter-spacing: 3rem;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  animation-name: showedUp;
+  animation-duration: 1s;
+}
 
-  animation-name: bouncingIn;
-  animation-duration: 2s;
+.header-middle-text {
+  background-color: #f0d200;
+  text-align: center;
+  display: block;
+  font-weight: 400;
+  font-size: 5rem;
+  letter-spacing: 3rem;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  animation-name: showedUp;
+  animation-duration: 1.5s;
 }
 
 .header-bottom-text {
+  background-color: #f0d200;
   display: block;
   letter-spacing: 1rem;
   font-weight: 400;
   font-size: 3rem;
   padding-top: 1rem;
-
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
   animation-name: showedUp;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes bouncingIn {
@@ -137,7 +155,6 @@ body {
   margin: 1rem;
   padding: 1rem 4rem;
   display: inline-block;
-  border-radius: 10rem;
   transition: all 0.2s;
 }
 
@@ -153,9 +170,9 @@ body {
 
 .header-btn {
   color: #fff;
-  background-color: #f0d200;
+  background-color: black;
   animation-name: showedUp;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 .blank {
@@ -278,8 +295,13 @@ body {
   background-color: #fefced;
 }
 
-.project h5 {
+.sources-block {
   background-color: #faf2b5;
+  display: block;
+}
+
+.sources-block h5 {
+  display: inline-block;
 }
 
 .project1 {
@@ -301,6 +323,46 @@ body {
 
 .project3 {
   grid-area: project3;
+}
+
+.contact-page {
+  height: 95vh;
+  display: block;
+  background-image: linear-gradient(to right, #f0d400, #faf2b5);
+
+  background-size: cover;
+  /* No matter what the width of the viewport is, we are trying to set the image within the width of the box */
+
+  background-position: top;
+  /* No matter where the viewport size is, the image will always show the "top" of itself */
+}
+
+.contact-page-textbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 70%);
+}
+
+.contact-page-textbox h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 5rem;
+  letter-spacing: 2rem;
+}
+
+.github-icon-small {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  transform: translateY(20%);
+}
+
+.youtube-icon {
+  display: inline-block;
+  margin-left: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+  transform: translateY(27%);
 }
 
 /* AHAHAHHAHAAAAAAA THIS LITERALLY SAVES ME SO MUCH HEADACHE FOR
