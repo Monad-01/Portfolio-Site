@@ -43,6 +43,7 @@ function App() {
         </div>
         <div class="about-right-column">
           <div class="about-right-column-textbox">
+            <br />
             <h1>"Hello, World!"</h1>
             <text>My name is Johnathan Pruitt.</text>
             <br />
